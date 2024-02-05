@@ -1,0 +1,54 @@
+# input
+
+snack_1 = int(input('How many snacks in first day ? '))
+snack_2 = int(input('How many snacks in second day ? '))
+snack_3 = int(input('How many snacks in third day ? '))
+pizza_1 = int(input('How many boxes of pizza in first day ? '))
+pizza_2 = int(input('How many boxes of pizza in second day ? '))
+pizza_3 = int(input('How many boxes of pizza in third day ? '))
+soda_1 = int(input('How many cans of soda in first day ? '))
+soda_2 = int(input('How many cans of soda in second day ? '))
+soda_3 = int(input('How many cans of soda in third day ? '))
+egg_1 = int(input('How many eggs in first day ? '))
+egg_2 = int(input('How many eggs in second day ? '))
+egg_3 = int(input('How many eggs in third day ? '))
+
+# list
+
+first = [snack_1,pizza_1,soda_1,egg_1]
+second = [snack_2,pizza_2,soda_2,egg_2]
+third = [snack_3,pizza_3,soda_3,egg_3]
+
+# function
+
+def tell(A):
+    if type(A) == list:
+       return print(f'''
+snack ===> {A[0]}
+pizza ===> {A[1]}
+soda ====> {A[2]}
+egg =====> {A[3]}''')
+        
+# return tell
+
+print('first day **********************')
+tell(first)
+print('second day *********************')
+tell(second)
+print('third day **********************')
+tell(third)
+
+# +++
+
+total_1 = snack_1 + pizza_1 + soda_1 + egg_1
+total_2 = snack_2 + pizza_2 + soda_2 + egg_2
+total_3 = snack_3 + pizza_3 + soda_3 + egg_3
+
+# total 
+
+print(f'''
+sells in first day  = {total_1}
+sells in second day = {total_2}
+sells in third day  = {total_3}''')
+
+# End
